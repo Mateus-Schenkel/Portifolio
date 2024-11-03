@@ -31,13 +31,13 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Case de Sucesso</a>
+						<a href="#dashboard-faturamento" class="logo">Projetos</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Fine Wear</a></li>
+							<li class="active"><a href="index.html">Meteus Schenkel</a></li>
 							<!--<li><a href="generic.html">Generic Page</a></li>
 							<li><a href="elements.html">Elements Reference</a></li>-->
 						</ul>
@@ -52,16 +52,44 @@
 
 				<!-- Main -->
 					<div id="main">
+						<!-- Technology Used -->
+						<article class="post featured">
+							<header class="major">
+								<h2>Algumas tecnologias que utilizo</h2>
+							</header>
+							<div class="tech-icons">
+								<img src="assets/icons/excel.png" alt="Excel" title="Excel">
+								<img src="assets/icons/powerautomate.png" alt="Power Automate" title="Power Automate">
+								<img src="assets/icons/powerbi.png" alt="Power BI" title="Power BI">
+								<img src="assets/icons/python.png" alt="Python" title="Python">
+								<img src="assets/icons/postgree.png" alt="Postgree SQL" title="Postgree SQL">
+							</div>
+						</article>
+						
+						<!-- Testimonials Section -->
+						<section id="testimonials">
+							<h2>O que dizem a respeito</h2>
+
+							<!-- Single Testimonial -->
+							<div class="testimonial">
+								<p class="name">Jaqueline M</p>
+								<div class="rating">
+									<span>⭐️⭐️⭐️⭐️⭐️</span> <!-- Star rating -->
+									<span class="score">5.0</span> <!-- Numerical score -->
+								</div>
+								<p class="comment">
+									"O profissional merece todos os adjetivos possíveis.
+									O atendimento foi ótimo, ele me contatou rapidamente e fez o serviço muito rápido também."
+									<a href="https://bit.ly/4huRh4S" target="_blank"> Ver mais avaliações no GetNinjas</a>
+								</p>
+							</div>
+						</section>
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<article class="post featured" id="dashboard-faturamento">
 								<header class="major">
-									<span class="date">15 de Outubro de 2024</span>
-									<h2><a href="#">Como A Fine Wear Otimizou seu <br />
-									Resultado em 45% com Análise de Dados</a></h2>
-									<p>E como você pode fazer o mesmo na sua empresa<br />
-									para que obtenha o melhor resultado.<br />
-									e bata todas as suas METAS.</p>
+									<!--<span class="date">15 de Outubro de 2024</span>-->
+									<h2><a href="#">Dashboard Faturamento</a></h2>
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
@@ -73,26 +101,26 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">15 de Outubro de 2024</span>
+										<!--<span class="date">15 de Outubro de 2024</span>-->
 										<h2><a href="#">Dashboard<br />
 										RH</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 									<p>Dashboard de RH desenvolvido para análise de desempenho de funcioários</p>
 									<ul class="actions special">
-										<li><a href="https://bit.ly/3Uarzc2" class="button">Ver Projeto</a></li>
+										<li><a href="https://bit.ly/3NV5873" class="button">Ver Projeto</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">15 de Outubro de 2024</span>
+										<!--<span class="date">15 de Outubro de 2024</span>-->
 										<h2><a href="#">Dashboard<br />
 										Logistica</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 									<p>Dashboard de logística desenvolvido para análise de entregas</p>
 									<ul class="actions special">
-										<li><a href="https://bit.ly/3Uarzc2" class="button">Ver Projeto</a></li>
+										<li><a href="https://bit.ly/3UvzMrf" class="button">Ver Projeto</a></li>
 									</ul>
 								</article>
 								<!--<article>
@@ -159,7 +187,7 @@
 									<a href="#" class="next">Next</a>
 								</div>
 							</footer> -->
-
+					    <!-- Seção de Tecnologias -->
 					</div>
 
 				<!-- Footer -->
@@ -227,5 +255,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+	<script>
+		$(document).ready(function() {
+			$('.logo').on('click', function(event) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: $('#dashboard-faturamento').offset().top
+				}, 800);
+			});
+		});
+		</script>
+			
 	</body>
 </html>
