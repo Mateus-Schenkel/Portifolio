@@ -4753,8 +4753,8 @@ input, select, textarea {
 		position: fixed;
 		bottom: 20px;
 		right: 20px;
-		width: 120px;
-		height: 120px;
+		width: 80px;
+		height: 80px;
 		background-color: #25d36500;
 		border-radius: 50%;
 		display: flex;
@@ -4762,6 +4762,7 @@ input, select, textarea {
 		justify-content: center;
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 		transition: transform 0.3s ease;
+		z-index: 1000;
 	}
 	
 	.whatsapp-button:hover {
