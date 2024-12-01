@@ -4831,4 +4831,34 @@ input, select, textarea {
 
 	.posts p {
 		margin-bottom: 10px; /* Reduz o espaço entre os parágrafos */
-	}	
+	}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 1rem; /* Menor padding nas telas menores */
+    }
+
+    #about header.major h2 {
+        font-size: 1.5rem; /* Reduzir o tamanho da fonte do título em telas pequenas */
+        margin-top: 1.5rem; /* Ajusta o espaço acima do título para telas menores */
+    }
+
+    .about-content {
+        display: block;
+        text-align: center; /* Centraliza o texto e as imagens */
+    }
+
+    .about-content .description {
+        margin-top: 1rem; /* Menor margem entre a descrição e a imagem */
+    }
+
+    .about-content .image.fit {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        margin-bottom: 1rem;
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Ajuste no tamanho da fonte para telas pequenas */
+    }
+}
