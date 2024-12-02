@@ -3799,31 +3799,89 @@ input, select, textarea {
 				text-align: center;
 			}
 
-			@media screen and (max-width: 1280px) {
-
-				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
-				}
-
+			/* Estilo para a seção Quem Sou Eu */
+			#about {
+				padding: 40px 20px;
+				background-color: #f9f9f9; /* Cor de fundo suave */
 			}
-
-			@media screen and (max-width: 736px) {
-
-				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+			
+			#about .major h2 {
+				text-align: center;
+				font-size: 2.5rem;
+				margin-bottom: 20px;
+				color: #333; /* Cor do título */
+			}
+			
+			.about-content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 20px;
+			}
+			
+			.about-content .image {
+				flex: 1;
+				max-width: 40%;
+			}
+			
+			.about-content .image img {
+				width: 100%;
+				border-radius: 50%; /* Torna a imagem circular */
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+			}
+			
+			.about-content .description {
+				flex: 2;
+				font-size: 1.125rem;
+				line-height: 1.8;
+				color: #555; /* Cor do texto */
+			}
+			
+			.about-content .description p {
+				margin-bottom: 15px;
+			}
+			
+			.about-content .description strong {
+				color: #222; /* Destaque no texto */
+			}
+			
+			/* Responsividade */
+			@media screen and (max-width: 1024px) {
+				#about {
+				padding: 2em; /* Ajusta o espaçamento em telas menores */
 				}
-
-					#main > .post header.major > .date {
-						margin-top: -1rem;
-						margin-bottom: 2rem;
-					}
-
-					#main > .post header.major > h1, #main > .post header.major h2 {
-						font-size: 2.5rem;
-						line-height: 1.2;
-						margin: 0 0 1.5rem 0;
-					}
-
+			
+				#about .about-content {
+				gap: 2em; /* Reduz o espaço entre os itens */
+				}
+			
+				#about .image.fit {
+				max-width: 250px; /* Reduz o tamanho da imagem */
+				}
+			
+				#about p {
+				font-size: 0.95em; /* Reduz o tamanho da fonte */
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				#about .about-content {
+				flex-direction: column; /* Alinha os itens verticalmente */
+				text-align: center; /* Centraliza o texto em dispositivos móveis */
+				}
+			
+				#about .image.fit {
+				margin: 0 auto 1.5em; /* Centraliza a imagem e adiciona espaço inferior */
+				}
+			
+				#about .description {
+				text-align: center; /* Centraliza o texto */
+				}
+			
+				#about p {
+				font-size: 0.9em; /* Reduz o tamanho da fonte para dispositivos menores */
+				line-height: 1.6; /* Ajusta o espaçamento para leitura */
+				}
 			}
 
 		#main > .posts {
@@ -4784,81 +4842,52 @@ input, select, textarea {
 		height: 70%;
 	}	
 
-	/* Sobre mim*/
-	#about {
-		padding: 2em 4em;
-		background: #f4f4f4;
-		text-align: center;
-	}
-	
-	#about header.major {
-    	margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-
-	#about .about-content {
-		display: flex;
-		align-items: center;
-		gap: 4em;
-		flex-wrap: wrap;
-	}
-	
-	#about .image.fit {
-		flex: 1;
-		max-width: 300px;
-	}
-	
-	#about .image.fit img {
-		border-radius: 50%;
-		max-width: 100%;
-		height: auto;
-	}
-	
-	#about .description {
-		flex: 1;
-		text-align: left;
-	}
-	
-	#about p {
-		line-height: 1.8;
-		margin: 1em 0;
-		font-size: 1.0em;
-	}
-
-	#dashboard-RH p {
-		text-align: center; /* Centraliza o texto dentro do parágrafo */
-	}
-
-	.posts p {
-		margin-bottom: 10px; /* Reduz o espaço entre os parágrafos */
-	}
-
-/* Estilo para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    #about {
-        padding: 1rem; /* Menor padding nas telas menores */
-    }
-
-    #about header.major h2 {
-        font-size: 1.5rem; /* Reduzir o tamanho da fonte do título em telas pequenas */
-        margin-top: 1.5rem; /* Ajusta o espaço acima do título para telas menores */
-    }
-
-    .about-content {
-        display: block;
-        text-align: center; /* Centraliza o texto e as imagens */
-    }
-
-    .about-content .description {
-        margin-top: 1rem; /* Menor margem entre a descrição e a imagem */
-    }
-
-    .about-content .image.fit {
-        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
-        margin-bottom: 1rem;
-    }
-
-    .about-content p {
-        font-size: 1rem; /* Ajuste no tamanho da fonte para telas pequenas */
-    }
-}
+/* Sobre Mim */
+#about {
+	padding: 2em 4em;
+	background: #f4f4f4; /* Mantido o fundo suave */
+	text-align: center; /* Centraliza o texto principal */
+  }
+  
+  #about header.major {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+  }
+  
+  #about .about-content {
+	display: flex;
+	align-items: center;
+	gap: 4em;
+	flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+  }
+  
+  #about .image.fit {
+	flex: 1;
+	max-width: 300px; /* Limita a largura máxima */
+  }
+  
+  #about .image.fit img {
+	border-radius: 50%; /* Mantém a imagem circular */
+	max-width: 100%; /* Garante responsividade */
+	height: auto; /* Ajusta automaticamente a altura */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  }
+  
+  #about .description {
+	flex: 1;
+	text-align: left; /* Texto alinhado à esquerda */
+  }
+  
+  #about p {
+	line-height: 1.8;
+	margin: 1em 0;
+	font-size: 1em; /* Tamanho confortável para leitura */
+  }
+  
+  #dashboard-RH p {
+	text-align: center; /* Centraliza o texto dentro do parágrafo */
+  }
+  
+  .posts p {
+	margin-bottom: 10px; /* Reduz o espaço entre os parágrafos */
+  }
