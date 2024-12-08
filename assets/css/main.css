@@ -1,6 +1,5 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap'); /*Fonte Nova*/
 
 /*
 	Massively by HTML5 UP
@@ -3471,7 +3470,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 45vh;
+				min-height: 80vh;
 			}
 
 				#intro h1 {
@@ -4749,6 +4748,8 @@ input, select, textarea {
 
 	}
 
+/* -----------------------------------*/
+
 	/* Estilo para a seção de tecnologias */
 	#technologies {
 		text-align: center;
@@ -4779,6 +4780,8 @@ input, select, textarea {
 		transform: scale(1.1);
 		filter: grayscale(0%);
 	}
+
+/* -----------------------------------*/
 
 	/* Avaliações*/
 	#testimonials {
@@ -4816,6 +4819,8 @@ input, select, textarea {
 		text-align: center;
 	}	
 
+/* -----------------------------------*/
+
 	/* Botão Whats*/
 	.whatsapp-button {
 		position: fixed;
@@ -4842,52 +4847,56 @@ input, select, textarea {
 		height: 70%;
 	}	
 
-/* Sobre Mim */
-#about {
-	padding: 2em 4em;
-	background: #f4f4f4; /* Mantido o fundo suave */
-	text-align: center; /* Centraliza o texto principal */
-  }
+	/* -----------------------------------*/
+
+	/* Sobre Mim */
+	#about {
+		padding: 2em 4em;
+		background: #f4f4f4;
+		text-align: center;
+	}
+	
+	#about header.major {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	#about .about-content {
+		display: flex;
+		align-items: center;
+		gap: 4em;
+		flex-wrap: wrap;
+	}
+	
+	#about .image.fit {
+		flex: 1;
+		max-width: 300px;
+	}
+	
+	#about .image.fit img {
+		border-radius: 50%;
+		max-width: 50px;
+		height: 50px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}	
+	
+	#about .description {
+		flex: 1;
+		text-align: left;
+	}
+	
+	#about p {
+		line-height: 1.8;
+		margin: 1em 0;
+		font-size: 1em;
+	}
   
-  #about header.major {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-  }
-  
-  #about .about-content {
-	display: flex;
-	align-items: center;
-	gap: 4em;
-	flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
-  }
-  
-  #about .image.fit {
-	flex: 1;
-	max-width: 300px; /* Limita a largura máxima */
-  }
-  
-  #about .image.fit img {
-	border-radius: 50%; /* Mantém a imagem circular */
-	max-width: 100%; /* Garante responsividade */
-	height: auto; /* Ajusta automaticamente a altura */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-  }
-  
-  #about .description {
-	flex: 1;
-	text-align: left; /* Texto alinhado à esquerda */
-  }
-  
-  #about p {
-	line-height: 1.8;
-	margin: 1em 0;
-	font-size: 1em; /* Tamanho confortável para leitura */
-  }
-  
-  #dashboard-RH p {
-	text-align: center; /* Centraliza o texto dentro do parágrafo */
-  }
-  
-  .posts p {
-	margin-bottom: 10px; /* Reduz o espaço entre os parágrafos */
-  }
+/* -----------------------------------*/
+
+	#dashboard-vendas p {
+		text-align: center;
+	}
+	
+	.posts p {
+		margin-bottom: 10px;
+	}
