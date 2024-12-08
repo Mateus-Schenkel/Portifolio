@@ -4900,3 +4900,39 @@ input, select, textarea {
 	.posts p {
 		margin-bottom: 10px;
 	}
+  
+/* -----------------------------------*/
+
+	.tech-label {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		background-color: rgba(0, 0, 0, 0.0);
+		color: #000000;
+		font-size: 0.9rem;
+		padding: 5px 10px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	
+	.tech-label img {
+		width: 30px;
+		height: 30px;
+	}
+	
+	article {
+		position: relative;
+	}	
+
+/* -----------------------------------
+
+	.language-label img {
+		width: 30px;
+		height: 30px;
+	}
+
+	article {
+		position: relative;
+	}/*
